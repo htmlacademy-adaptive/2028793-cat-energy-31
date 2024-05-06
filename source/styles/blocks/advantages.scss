@@ -1,0 +1,29 @@
+.advantages__caption {
+  font-family: $secondary-font;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages__caption {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.advantages__description {
+  font-family: $primary-font;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

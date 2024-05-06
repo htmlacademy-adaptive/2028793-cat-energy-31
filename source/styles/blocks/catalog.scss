@@ -1,0 +1,72 @@
+.catalog__link {
+  text-decoration: none;
+}
+
+.catalog__caption {
+  font-family: $secondary-font;
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+  .catalog__caption {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.catalog__title {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: #222222;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .catalog__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.catalog__item-info {
+  font-family: $primary-font;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+  font-weight: 400;
+  list-style-type: none;
+}
+
+@media screen and (min-width: 768px) {
+  .catalog__item-info {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.catalog__button {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.button-primary {
+  @include button-primary ($secondary-font, #ffffff, #68b738);
+}
+
+.button-secondary {
+  @include button-secondary ($secondary-font, #444444, #F2F2F2);
+}
+
+.catalog__text {
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  font-weight: 400;
+}

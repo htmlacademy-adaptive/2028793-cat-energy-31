@@ -1,0 +1,79 @@
+.catalog-additional__caption {
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+  .catalog-additional__caption {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .catalog-additional__caption {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+.catalog-additional__item {
+  list-style-type: none;
+}
+
+.catalog-additional__title {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 16px;
+  color: #222222;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .catalog-additional__title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.catalog-additional__item-info {
+  font-family: $primary-font;
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
+  font-weight: 400;
+  list-style-type: none;
+}
+
+@media screen and (min-width: 768px) {
+  .catalog-additional__item-info {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.catalog-additional__button {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.button-primary {
+  @include button-primary ($secondary-font, #ffffff, #68b738);
+}
+
+.catalog-additional__gift {
+  background-color: rgba(104, 183, 56, 0.85);
+}
+
+.catalog-additional__text {
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  font-weight: 400;
+}

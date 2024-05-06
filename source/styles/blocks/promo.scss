@@ -1,0 +1,64 @@
+.promo__wrapper {
+  background-color: #68b738;
+}
+
+@media screen and (min-width: 768px) {
+  .promo__wrapper {
+    background-color: #ffffff;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .promo__wrapper {
+    background-color: #ffffff;
+  }
+}
+
+.promo__caption {
+  font-family: $secondary-font;
+  font-size: 36px;
+  line-height: 36px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+  .promo__caption {
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+  }
+}
+
+.promo__slogan {
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 14px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+  .promo__slogan {
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+  }
+}
+
+.promo__button {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+  .promo__button {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+.button-primary {
+  @include button-primary ($secondary-font, #ffffff, #68b738);
+}

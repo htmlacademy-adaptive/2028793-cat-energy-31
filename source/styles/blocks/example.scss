@@ -1,0 +1,76 @@
+.example__caption {
+  font-family: $secondary-font;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+  .example__caption {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.example__description {
+  font-family: $primary-font;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+  .example__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.example__number {
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+  .example__number {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+.example__desc {
+  font-family: $primary-font;
+  font-size: 12px;
+  line-height: 12px;
+  color: #444444;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+  .example__desc {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+.example__text {
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .example__text {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
