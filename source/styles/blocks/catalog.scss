@@ -33,6 +33,23 @@
   }
 }
 
+.catalog__item--more::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-image: url("../../icons/stack.svg#icon_plus");
+  background-size: 30px 30px;
+  position: absolute;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 768px) {
+  .catalog__item--more::before {
+    width: 60px;
+    height: 60px;
+  }
+}
+
 .catalog__item-info {
   font-family: $primary-font;
   font-size: 12px;

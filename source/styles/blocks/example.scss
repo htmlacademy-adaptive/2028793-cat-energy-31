@@ -74,3 +74,51 @@
     line-height: 20px;
   }
 }
+
+.example__slider {
+  position: relative;
+}
+
+.slider__button {
+  background-color: #666666;
+  width: 4px;
+  height: 100%;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.slider__button::before {
+  content: "";
+  background-color: #ffffff;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #666666;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.slider__button::after {
+  content: "";
+  background-color: #666666;
+  width: 40px;
+  height: 40px;
+  border: none;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  mask-image: url("../../icons/stack.svg#icon-slider");
+  mask-position: 9px 13px;
+  mask-repeat: no-repeat;
+  mask-size: 24px 18px;
+}

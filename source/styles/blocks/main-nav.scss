@@ -13,3 +13,23 @@
     background-color: #68b738;
   }
 }
+
+.main-nav__toggle--close {
+  background-image: url("../../icons/stack.svg#icon_close");
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  width: 18px;
+  height: 18px;
+  border: none;
+}
+
+.main-nav__toggle {
+  background-image: url("../../icons/stack.svg#icon_burger");
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  width: 24px;
+  height: 24px;
+  border: none;
+}

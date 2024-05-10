@@ -27,3 +27,37 @@
     line-height: 24px;
   }
 }
+
+.advantages__item::before {
+  content: "";
+  background-color: #68b738;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  display: block;
+}
+
+.advantages__item--benefit::before {
+  content: "";
+  background-image: url("../../icons/stack.svg#icon_leaf");
+  background-size: 30px 32px;
+}
+
+.advantages__item--powder-form::before {
+  content: "";
+  background-image: url("../../icons/stack.svg#icon_powder-form");
+  background-size: 30px 32px;
+}
+
+.advantages__item--intake::before {
+  content: "";
+  background-image: url("../../icons/stack.svg#icon_eat");
+  background-size: 30px 32px;
+}
+
+.advantages__item--time::before {
+  content: "";
+  background-image: url("../../icons/stack.svg#icon_time");
+  background-size: 30px 32px;
+}
