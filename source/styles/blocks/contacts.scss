@@ -99,10 +99,14 @@
     min-height: 199px;
     position: absolute;
     background-color: #ffffff;
-    top: 101px;
+    top: 95px;
     left: 110px;
     box-sizing: border-box;
     gap: 46px;
+  }
+
+  .contacts__wrapper--catalog {
+    top: 95px;
   }
 
   .contacts__map {

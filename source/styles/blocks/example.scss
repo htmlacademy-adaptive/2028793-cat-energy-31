@@ -265,17 +265,19 @@
     gap: 224px;
     background: linear-gradient(#ffffff 31%, #f2f2f2 31%);
     width: 100%;
-    padding: 69px 0;
+    padding: 69px 0 76px;
+    border-top: none;
   }
 
   .example__wrapper {
-    width: 1440px;
+    max-width: 1440px;
     padding: 0 110px;
     position: relative;
   }
 
   .example__caption {
-    margin-bottom: 143px;
+    margin-bottom: 146px;
+    width: 1220px;
   }
 
   .example__description {
@@ -292,7 +294,7 @@
   .example__list {
     gap: 43px;
     margin: 0;
-    margin-bottom: 59px;
+    margin-bottom: 55px;
   }
 
   .example__text {
@@ -314,5 +316,10 @@
 
   .example__desc {
     background-color: #f2f2f2;
+    top: 10px;
+  }
+
+  .example__box {
+    margin-bottom: 4px;
   }
 }
