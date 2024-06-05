@@ -1,3 +1,32 @@
+.contacts {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contacts__wrapper {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 1px;
+  padding: 26px 20px;
+  margin: 0 auto;
+  order: -1;
+}
+
+.contacts__map {
+  display: block;
+  width: 100%;
+  height: 362px;
+  background-image: image-set("../../images/map-mobile@1x.png" 1x, "../../images/map-mobile@2x.png" 2x);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contacts__wrapper--catalog {
+  background-color: $basic_grey;
+}
+
 .contacts__text {
   font-family: $secondary-font;
   font-size: 16px;
@@ -5,13 +34,7 @@
   color: #111111;
   font-weight: 400;
   text-transform: uppercase;
-}
-
-@media screen and (min-width: 768px) {
-  .contacts__text {
-    font-size: 20px;
-    line-height: 26px;
-  }
+  margin: 0;
 }
 
 .contacts__address {
@@ -20,10 +43,73 @@
   line-height: 20px;
   color: #444444;
   font-weight: 400;
+  margin: 0;
 }
 
-@media screen and (min-width: 768px) {
+.contacts__image {
+  display: block;
+  background-color: $basic_grey;
+  object-fit: contain;
+}
+
+@media screen and (min-width: $tablet-width) {
+  .contacts--catalog {
+    background-color: $basic_grey;
+  }
+
+  .contacts__wrapper {
+    padding: 60px 30px;
+    min-width: 628px;
+  }
+
+  .contacts__text {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
   .contacts__address {
     font-size: 16px;
+    text-align: end;
+  }
+
+  .contacts__city {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .contacts__map {
+    height: 400px;
+    background-image:
+      image-set(
+        "../../images/map-tablet@1x.webp" 1x type("image/webp"),
+        "../../images/map-tablet@2x.webp" 2x type("image/webp"),
+        "../../images/map-tablet@1x.png" 1x type("image/png"),
+        "../../images/map-tablet@2x.png" 2x type("image/png"));
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .contacts {
+    position: relative;
+  }
+
+  .contacts__wrapper {
+    min-width: 565px;
+    padding: 60px 78px 60px 80px;
+    min-height: 199px;
+    position: absolute;
+    background-color: #ffffff;
+    top: 101px;
+    left: 110px;
+    box-sizing: border-box;
+    gap: 46px;
+  }
+
+  .contacts__map {
+    background-image: image-set("../../images/map-desktop@1x.png" 1x, "../../images/map-desktop@2x.png" 2x);
+  }
+
+  .contacts__address {
+    text-align: start;
   }
 }

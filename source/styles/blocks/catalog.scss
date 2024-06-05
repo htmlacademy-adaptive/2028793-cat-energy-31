@@ -1,5 +1,11 @@
-.catalog__link {
-  text-decoration: none;
+.catalog {
+  margin-bottom: 27px;
+  border-top: 1px solid #d9d9d9;
+}
+
+.catalog__wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .catalog__caption {
@@ -8,13 +14,50 @@
   line-height: 36px;
   color: #000000;
   font-weight: 400;
+  margin: 0;
+  margin-bottom: 41px;
+  position: relative;
+  padding-top: 27px;
 }
 
-@media screen and (min-width: 768px) {
-  .catalog__caption {
-    font-size: 60px;
-    line-height: 60px;
-  }
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.catalog__item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 54px auto min-content;
+  min-width: 280px;
+  position: relative;
+  padding-top: 20px;
+}
+
+.catalog__item::after {
+  content: "";
+  border: none;
+  min-width: 320px;
+  height: 1px;
+  background-color: $basic_grey-second;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: -20px;
+  left: -20px;
+}
+
+.catalog__link {
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  text-decoration: none;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 .catalog__title {
@@ -24,33 +67,21 @@
   color: #222222;
   font-weight: 400;
   text-transform: uppercase;
+  margin: 0;
+  padding-right: 67px;
 }
 
-@media screen and (min-width: 768px) {
-  .catalog__title {
-    font-size: 20px;
-    line-height: 24px;
-  }
-}
-
-.catalog__item--more::before {
-  content: "";
-  width: 30px;
-  height: 30px;
-  background-image: url("../../icons/stack.svg#icon_plus");
-  background-size: 30px 30px;
-  position: absolute;
-  background-repeat: no-repeat;
-}
-
-@media screen and (min-width: 768px) {
-  .catalog__item--more::before {
-    width: 60px;
-    height: 60px;
-  }
+.catalog__list-info {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 22px;
 }
 
 .catalog__item-info {
+  display: flex;
+  justify-content: space-between;
   font-family: $primary-font;
   font-size: 12px;
   line-height: 16px;
@@ -59,14 +90,16 @@
   list-style-type: none;
 }
 
-@media screen and (min-width: 768px) {
-  .catalog__item-info {
-    font-size: 16px;
-    line-height: 20px;
-  }
-}
-
 .catalog__button {
+  grid-column: 1/-1;
+  grid-row: 3/4;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 40px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -80,10 +113,198 @@
   @include button-secondary ($secondary-font, #444444, #F2F2F2);
 }
 
+.catalog__item--more {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.catalog__item--more .catalog__link {
+  flex-direction: column;
+  padding-top: 55px;
+}
+
+.catalog__item--more .catalog__link::before,
+.catalog__item--more .catalog__link::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: #d3d3d3;
+  left: 125px;
+  top: 39px;
+}
+
+.catalog__item--more .catalog__link::after {
+  transform: rotate(90deg);
+}
+
+.catalog__item--more .catalog__title {
+  padding: 0;
+  text-align: center;
+}
+
 .catalog__text {
   font-family: $primary-font;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 12px;
+  line-height: 16px;
   color: #444444;
   font-weight: 400;
+  margin-bottom: 21px;
+  text-align: center;
+}
+
+@media screen and (min-width: $tablet-width) {
+  .catalog {
+    padding: 0;
+    margin-bottom: 65px;
+    border-top: none;
+  }
+
+  .catalog__wrapper {
+    padding: 0 30px;
+  }
+
+  .catalog__caption {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 84px;
+    padding-top: 63px;
+  }
+
+  .catalog__caption::before {
+    display: none;
+  }
+
+  .catalog__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+  }
+
+  .catalog__list-info {
+    gap: 11px;
+    padding-bottom: 40px;
+  }
+
+  .catalog__item {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 37px;
+    box-sizing: border-box;
+    background: linear-gradient(#ffffff 16%, $basic_grey 16%);
+  }
+
+  .catalog__item::after {
+    display: none;
+  }
+
+  .catalog__link {
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+    padding-top: 202px;
+  }
+
+  .catalog__link picture {
+    position: absolute;
+    top: 10px;
+  }
+
+  .catalog__title {
+    font-size: 20px;
+    line-height: 24px;
+    padding: 0 50px;
+    text-align: center;
+    margin-bottom: 19px;
+  }
+
+  .catalog__item--more {
+    gap: 84px;
+  }
+
+  .catalog__item--more .catalog__link {
+    padding: 206px 36px 0;
+    box-sizing: border-box;
+  }
+
+  .catalog__item--more .catalog__link::before,
+  .catalog__item--more .catalog__link::after {
+    content: "";
+    width: 60px;
+    left: 133px;
+    top: 161px;
+  }
+
+  .catalog__item-info {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .catalog__text {
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .catalog {
+    padding: 0;
+    margin-bottom: 71px;
+  }
+
+  .catalog__wrapper {
+    padding: 0 110px;
+  }
+
+  .catalog__caption {
+    margin-bottom: 74px;
+    padding-top: 75px;
+  }
+
+  .catalog__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 53px 80px;
+  }
+
+  .catalog__item {
+    min-width: 169px;
+    background: linear-gradient(#ffffff 18%, #f2f2f2 18%);
+  }
+
+  .catalog__title {
+    padding: 0 10px;
+    margin-bottom: 27px;
+  }
+
+  .catalog__link picture {
+    top: 19px;
+  }
+
+  .catalog__item-info {
+    border-bottom: 1px solid $special_grey;
+  }
+
+  .catalog__item--more {
+    justify-content: space-between;
+  }
+
+  .catalog__item--more .catalog__link {
+    padding: 0;
+    padding-top: 200px;
+  }
+
+  .catalog__item--more .catalog__title {
+    margin-bottom: 24px;
+  }
+
+  .catalog__item--more .catalog__link::before,
+  .catalog__item--more .catalog__link::after {
+    left: 93px;
+    top: 169px;
+  }
 }
