@@ -1,0 +1,335 @@
+.programs {
+  background-color: #ffffff;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.programs__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.programs__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+.programs__item {
+  list-style-type: none;
+  position: relative;
+  background-color: $basic_grey;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 33px 18px 20px;
+}
+
+.programs__item--slim::before {
+  content: "";
+  background-color: $basic_green;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: 21px;
+  left: 20px;
+}
+
+.programs__item--slim::after {
+  content: "";
+  background-image: url("../../icons/stack.svg#icon_weight-loss");
+  background-repeat: no-repeat;
+  background-size: 36px 50px;
+  width: 36px;
+  height: 50px;
+  position: absolute;
+  top: 21px;
+  left: 27px;
+}
+
+.programs__item--pro::before {
+  content: "";
+  background-color: $basic_green;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: 24px;
+  left: 21px;
+}
+
+.programs__item--pro::after {
+  content: "";
+  background-image: url("../../icons/stack.svg#icon_weight-gain");
+  background-repeat: no-repeat;
+  background-size: 67px 28px;
+  width: 67px;
+  height: 28px;
+  position: absolute;
+  top: 35px;
+  left: 13px;
+}
+
+.programs__caption {
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 37px;
+  color: #000000;
+  font-weight: 400;
+  text-transform: uppercase;
+  order: -1;
+  margin: 0;
+  margin-bottom: 29px;
+  padding-left: 70px;
+}
+
+.programs__description {
+  font-family: $primary-font;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special_dark-grey-second;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 15px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.programs__link {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: auto;
+  position: relative;
+  padding: 4px 0;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.programs__item--slim .programs__link::after {
+  content: "";
+  object-fit: contain;
+  background-color: #000000;
+  width: 32px;
+  height: 12px;
+  display: block;
+  mask-image: url("../../icons/stack.svg#icon_arrow");
+  mask-position: 100%;
+  mask-repeat: no-repeat;
+  mask-size: 32px 12px;
+  position: absolute;
+  top: 24%;
+  left: 102px;
+  transition: width 0.3s, transform 0.3s;
+}
+
+.programs__item--pro .programs__link::after {
+  content: "";
+  object-fit: contain;
+  background-color: #000000;
+  width: 32px;
+  height: 12px;
+  display: block;
+  mask-image: url("../../icons/stack.svg#icon_arrow");
+  mask-position: 100%;
+  mask-repeat: no-repeat;
+  mask-size: 32px 12px;
+  position: absolute;
+  top: 22%;
+  left: 98px;
+  transition: width 0.3s, transform 0.3s;
+}
+
+.programs__link:hover::after,
+.programs__link:focus::after {
+  width: 32px;
+  transform: scaleX(1.35);
+}
+
+
+@media screen and (min-width: $tablet-width) {
+  .programs {
+    margin-bottom: 45px;
+  }
+
+  .programs__wrapper {
+    padding: 0 30px;
+    display: block;
+  }
+
+  .programs__list {
+    gap: 30px;
+  }
+
+  .programs__item {
+    padding: 77px 265px 53px 52px;
+    align-items: flex-start;
+  }
+
+  .programs__caption {
+    font-size: 36px;
+    line-height: 36px;
+    text-align: left;
+    margin-bottom: 24px;
+    padding: 0;
+  }
+
+  .programs__description {
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    padding-right: 50px;
+    margin-bottom: 48px;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .programs__description::after {
+    display: none;
+  }
+
+  .programs__link {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .programs__link::after {
+    top: 291px;
+    left: 183px;
+  }
+
+  .programs__item::before {
+    content: "";
+    background-color: $basic_green;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 92px;
+    left: auto;
+    right: 63px;
+  }
+
+  .programs__item--slim::after {
+    content: "";
+    background-image: url("../../icons/stack.svg#icon_weight-loss");
+    background-repeat: no-repeat;
+    background-size: 140px 194px;
+    width: 140px;
+    height: 194px;
+    top: 80px;
+    left: auto;
+    right: 93px;
+  }
+
+  .programs__item--pro::after {
+    content: "";
+    background-image: url("../../icons/stack.svg#icon_weight-gain");
+    background-repeat: no-repeat;
+    background-size: 268px 112px;
+    width: 268px;
+    height: 112px;
+    top: 134px;
+    left: auto;
+    right: 29px;
+  }
+
+  .programs__item--slim .programs__link::after {
+    content: "";
+    width: 32px;
+    mask-size: 32px 12px;
+    position: absolute;
+    top: 33%;
+    left: 132px;
+  }
+
+  .programs__item--pro .programs__link::after {
+    content: "";
+    width: 32px;
+    mask-size: 32px 12px;
+    top: 35%;
+    left: 129px;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .programs {
+    padding-top: 82px;
+    margin: 0;
+  }
+
+  .programs__wrapper {
+    max-width: 1440px;
+    padding: 0 110px;
+  }
+
+  .programs__list {
+    flex-direction: row;
+    gap: 80px;
+  }
+
+  .programs__item {
+    width: 570px;
+    box-sizing: border-box;
+    padding: 77px 60px 55px 52px;
+  }
+
+  .programs__caption {
+    margin-bottom: 73px;
+    padding-left: 162px;
+  }
+
+  .programs__description {
+    padding-right: 0;
+    margin-bottom: 23px;
+  }
+
+  .programs__item::before {
+    content: "";
+    background-color: $basic_green;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    top: 47px;
+    left: 52px;
+  }
+
+  .programs__item--slim::after {
+    content: "";
+    background-image: url("../../icons/stack.svg#icon_weight-loss");
+    background-repeat: no-repeat;
+    background-size: 70px 97px;
+    width: 70px;
+    height: 97px;
+    position: absolute;
+    top: 41px;
+    left: 67px;
+  }
+
+  .programs__item--pro::after {
+    content: "";
+    background-image: url("../../icons/stack.svg#icon_weight-gain");
+    background-repeat: no-repeat;
+    background-size: 134px 56px;
+    width: 134px;
+    height: 56px;
+    position: absolute;
+    top: 67px;
+    left: 33px;
+  }
+}

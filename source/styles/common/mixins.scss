@@ -1,0 +1,37 @@
+@mixin font-face($font-family, $font-weight, $font-style, $font-src) {
+  @font-face {
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-style: $font-style;
+    font-display: swap;
+    src: $font-src;
+  }
+}
+
+@mixin nav-uppercase ($font-size, $font-weight, $line-height, $color) {
+  font-family: $secondary-font;
+  font-weight: $font-weight;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+}
+
+@mixin button-primary ($font-family, $color, $background-color) {
+  font-family: $font-family;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $color;
+  background-color: $background-color;
+  text-align: center;
+}
+
+@mixin button-secondary ($font-family, $color, $background-color) {
+  font-family: $font-family;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $color;
+  background-color: $background-color;
+  text-align: center;
+}
