@@ -181,7 +181,3 @@
     margin-left: 80px;
   }
 }
-
-.button-primary {
-  @include button-primary ($secondary-font, #ffffff, $basic_green);
-}

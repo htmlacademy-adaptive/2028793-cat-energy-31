@@ -37,8 +37,18 @@
   display: none;
 }
 
-.main-nav--nojs {
+.main-nav--nojs .main-nav__list {
+  display: block;
   position: static;
+  top: 100%;
+}
+
+.main-nav--nojs .main-nav__item {
+  display: block;
+  min-width: 280px;
+}
+
+.main-nav--nojs .main-nav__item a {
   display: block;
 }
 
@@ -134,7 +144,6 @@
     border-top: 1px solid #e6e6e6;
   }
 }
-
 
 @media screen and (min-width: $tablet-width) {
   .main-nav__toggle {

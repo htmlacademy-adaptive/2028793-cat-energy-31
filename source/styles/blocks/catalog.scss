@@ -105,14 +105,6 @@
   font-weight: 400;
 }
 
-.button-primary {
-  @include button-primary ($secondary-font, #ffffff, #68b738);
-}
-
-.button-secondary {
-  @include button-secondary ($secondary-font, #444444, #F2F2F2);
-}
-
 .catalog__item--more {
   display: flex;
   flex-direction: column;

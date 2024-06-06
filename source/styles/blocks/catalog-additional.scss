@@ -100,10 +100,6 @@
   margin-top: 2px;
 }
 
-.button-primary {
-  @include button-primary ($secondary-font, #ffffff, #68b738);
-}
-
 .catalog-additional__gift {
   background-color: rgba(104, 183, 56, 0.85);
   background-image: image-set("../../images/catalog-bg-cat-mobile@1x.png" 1x, "../../images/catalog-bg-cat-mobile@2x.png"2x);

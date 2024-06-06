@@ -75,11 +75,6 @@
   border: none;
 }
 
-.button-primary {
-  @include button-primary ($secondary-font, #ffffff, #68b738);
-}
-
-
 @media screen and (min-width: $tablet-width) {
   .subscribe {
     padding-bottom: 80px;
