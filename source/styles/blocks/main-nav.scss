@@ -180,6 +180,8 @@
   .main-nav__list {
     position: static;
     z-index: 1;
+    min-width: 478px;
+    padding-left: 0;
   }
 
   .main-nav__list a {

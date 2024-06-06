@@ -124,13 +124,17 @@
   }
 
   .subscribe {
-    padding-bottom: 106px;
+    padding: 96px 0 104px;
   }
 
   .subscribe__caption {
     font-size: 40px;
     line-height: 40px;
-    margin-bottom: 71px;
+    margin-bottom: 72px;
+  }
+
+  .subscribe__text {
+    margin-bottom: 24px;
   }
 
   .subscribe__form {
