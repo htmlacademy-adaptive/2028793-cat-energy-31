@@ -33,25 +33,6 @@
   background-size: 24px 24px;
 }
 
-.main-nav--nojs .main-nav__toggle {
-  display: none;
-}
-
-.main-nav--nojs .main-nav__list {
-  display: block;
-  position: static;
-  top: 100%;
-}
-
-.main-nav--nojs .main-nav__item {
-  display: block;
-  min-width: 280px;
-}
-
-.main-nav--nojs .main-nav__item a {
-  display: block;
-}
-
 .main-nav--opened .main-nav__toggle::before {
   content: "";
   position: absolute;
@@ -112,6 +93,19 @@
     right: -20px;
     min-width: 320px;
     border-top: 1px solid #e6e6e6;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__list {
+    position: static;
+    top: 100%;
+  }
+
+  .main-nav--nojs .main-nav__item {
+    display: block;
   }
 }
 
