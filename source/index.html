@@ -11,6 +11,10 @@
   <link rel="icon" href="./favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./favicons/apple-icon-180x180"><!-- 180x180 -->
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="./styles/styles.scss" as="style">
+  <link rel="preload" href="./scripts/index.js" as="script">
+  <link rel="preload" href="./images/index-cat-mobile@2x.png" as="image">
+  <link rel="preload" href="./fonts/oswald/oswaldregular.woff2" as="font">
   <script src="scripts/index.js" defer>
   </script>
 </head>
@@ -170,7 +174,7 @@
   </main>
   <footer class="main-footer" data-test="footer">
     <div class="main-footer__wrapper">
-      <a class="logo" href="index.html" aria-current="page">
+      <a class="main-footer__logo" href="index.html" aria-current="page">
         <img src="./images/logo/logo-text.svg" width="128" height="24" alt="Cat Energy.">
         <span class="visually-hidden">«Кэт энерджи»</span>
       </a>
@@ -185,8 +189,8 @@
           <a class="main-footer__link main-footer__link--telegram" href="https://t.me/htmlacademy"><span class="visually-hidden">Мы в Телеграме</span></a>
         </li>
       </ul>
-      <a class="htmlacademy-link" href="https://htmlacademy.ru/intensive/adaptive">
-        <span class="htmlacademy-text">HTML Academy</span>
+      <a class="main-footer__htmlacademy-link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="main-footer__htmlacademy-text">HTML Academy</span>
       </a>
     </div>
   </footer>

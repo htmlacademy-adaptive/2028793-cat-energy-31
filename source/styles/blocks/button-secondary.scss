@@ -1,0 +1,3 @@
+.button-secondary {
+  @include button-secondary ($secondary-font, #444444, #F2F2F2);
+}
