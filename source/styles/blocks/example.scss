@@ -105,76 +105,6 @@
   box-sizing: border-box;
 }
 
-.slider {
-  --curtain-place: 0.5;
-  display: grid;
-  grid-template-columns: calc(var(--curtain-place) * 100%) auto calc((1 - var(--curtain-place)) * 100%);
-  width: min(100%, 280px);
-  aspect-ratio: 280/256;
-}
-
-.slider__image {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-
-  &--cat-before {
-    object-position: left;
-  }
-
-  &--cat-after {
-    object-position: right;
-  }
-}
-
-.slider__box {
-  z-index: 1;
-  display: grid;
-  place-items: center;
-  margin: 0 -2px;
-  width: 4px;
-  height: 100%;
-  border-radius: 2px;
-  color: var(--curtain-color, $special_grey-second);
-  background-color: currentColor;
-  cursor: col-resize;
-  transition: color 0.2s, opacity 0.2s;
-
-  &:hover {
-    --curtain-color: #68b738;
-  }
-
-  &:active {
-    opacity: 0.6;
-  }
-}
-
-.slider__button {
-  box-sizing: border-box;
-  display: grid;
-  margin: -18px;
-  padding: 0;
-  width: 40px;
-  height: 40px;
-  color: inherit;
-  border: 2px solid currentColor;
-  border-radius: 20px;
-  background-color: #ffffff;
-  cursor: col-resize;
-
-  &::before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    background-color: currentColor;
-    mask-image: url("../../icons/stack.svg#icon-slider");
-    mask-position: 50%;
-    mask-size: 24px 18px;
-    mask-repeat: no-repeat;
-  }
-}
-
 @media screen and (min-width: $tablet-width) {
   .example {
     background: linear-gradient(#ffffff 57%, #eaeaea 57%);
@@ -253,10 +183,6 @@
     display: block;
     margin-top: 9px;
   }
-
-  .slider {
-    width: min(100%, 560px);
-  }
 }
 
 @media screen and (min-width: $desktop-width) {
@@ -306,12 +232,6 @@
 
   .example__price {
     margin: 0;
-  }
-
-  .slider {
-    position: absolute;
-    margin: 0;
-    right: 110px;
   }
 
   .example__desc {

@@ -26,7 +26,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 48%;
+    top: 33%;
     box-shadow: 100vw 0 0 0 $basic_green;
     height: 2px;
     background-color: $basic_green;
@@ -75,11 +75,6 @@
   border: none;
 }
 
-.button-primary {
-  @include button-primary ($secondary-font, #ffffff, #68b738);
-}
-
-
 @media screen and (min-width: $tablet-width) {
   .subscribe {
     padding-bottom: 80px;
@@ -97,13 +92,19 @@
   .subscribe__caption {
     font-size: 32px;
     line-height: 32px;
-    margin-bottom: 67px;
+    margin-bottom: 66px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 39%;
+    }
   }
 
   .subscribe__text {
     font-size: 24px;
     line-height: 32px;
-    margin-bottom: 23px;
+    margin-bottom: 24px;
     padding: 0 30px;
   }
 
@@ -124,13 +125,17 @@
   }
 
   .subscribe {
-    padding-bottom: 106px;
+    padding: 96px 0 104px;
   }
 
   .subscribe__caption {
     font-size: 40px;
     line-height: 40px;
-    margin-bottom: 71px;
+    margin-bottom: 72px;
+  }
+
+  .subscribe__text {
+    margin-bottom: 24px;
   }
 
   .subscribe__form {
