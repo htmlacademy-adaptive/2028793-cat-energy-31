@@ -1,5 +1,5 @@
 .catalog {
-  margin-bottom: 27px;
+  padding-bottom: 25px;
   border-top: 1px solid #d9d9d9;
 }
 
@@ -62,6 +62,7 @@
   grid-column: 2/-1;
   grid-row: 1/2;
   text-decoration: none;
+  min-height: 55px;
 }
 
 .catalog__title {
@@ -81,6 +82,11 @@
   display: flex;
   flex-direction: column;
   padding: 0 0 22px;
+}
+
+.catalog__text-info {
+  display: block;
+  padding-right: 1px;
 }
 
 .catalog__item-info {
@@ -115,11 +121,13 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  padding-top: 25px;
 }
+
 
 .catalog__item--more .catalog__link {
   flex-direction: column;
-  padding-top: 55px;
+  padding-top: 53px;
 }
 
 .catalog__item--more .catalog__link::before,
@@ -140,6 +148,7 @@
 .catalog__item--more .catalog__title {
   padding: 0;
   text-align: center;
+  margin-bottom: 8px;
 }
 
 .catalog__text {
@@ -148,6 +157,7 @@
   line-height: 16px;
   color: #444444;
   font-weight: 400;
+  margin: 0;
   margin-bottom: 21px;
   text-align: center;
 }
@@ -155,8 +165,8 @@
 @media screen and (min-width: $tablet-width) {
   .catalog {
     padding: 0;
-    margin-bottom: 65px;
-    border-top: none;
+    margin-bottom: 74px;
+    border-top: 0;
   }
 
   .catalog__wrapper {
@@ -181,7 +191,7 @@
   }
 
   .catalog__list-info {
-    gap: 11px;
+    gap: 5px;
     margin-bottom: 32px;
     padding: 0;
   }
@@ -192,6 +202,7 @@
     padding: 40px 37px;
     box-sizing: border-box;
     background: linear-gradient(#ffffff 16%, $basic_grey 16%);
+    height: 511px;
   }
 
   .catalog__item::after {
@@ -199,10 +210,9 @@
   }
 
   .catalog__link {
-    flex-direction: column;
-    margin: 0;
-    align-items: center;
-    padding-top: 186px;
+    display: block;
+    padding-top: 187px;
+    margin-bottom: 16px;
   }
 
   .catalog__link picture {
@@ -216,11 +226,15 @@
     line-height: 24px;
     padding: 0 50px;
     text-align: center;
-    margin-bottom: 20px;
+  }
+
+  .catalog__title-link {
+    display: block;
+    margin-bottom: 13px;
   }
 
   .catalog__item--more {
-    gap: 84px;
+    justify-content: space-between;
   }
 
   .catalog__item--more .catalog__link {
@@ -240,11 +254,11 @@
     font-size: 16px;
     line-height: 20px;
     border-bottom: 1px solid $special_grey;
-    min-height: 28px;
+    min-height: 25px;
   }
 
-  .catalog__item-info:nth-child(1) {
-    min-height: 25px;
+  .catalog__item--more .catalog__title {
+    margin-bottom: 23px;
   }
 
   .catalog__text {
@@ -290,6 +304,7 @@
 
   .catalog__link picture {
     top: 10px;
+    right: 38px;
   }
 
   .catalog__list-info {
