@@ -1,5 +1,6 @@
 .promo {
   position: relative;
+  padding-top: 27px;
 }
 
 .promo::before {
@@ -30,7 +31,7 @@
   max-width: 320px;
   box-sizing: border-box;
   margin: 0 auto;
-  padding-top: 27px;
+  padding: 0 20px;
 }
 
 .promo__caption {
@@ -69,12 +70,12 @@
   font-weight: 400;
   height: 40px;
   width: 280px;
-  margin-bottom: 20px;
 }
 
 @media screen and (min-width: $tablet-width) {
   .promo {
     background-color: #ffffff;
+    padding-top: 65px;
   }
 
   .promo__wrapper {
@@ -84,8 +85,9 @@
     max-width: 768px;
     box-sizing: border-box;
     margin: 0 auto;
-    padding: 65px 72px 506px 120px;
     position: relative;
+    padding: 0 30px;
+    min-height: 810px;
   }
 
   .promo__caption {
@@ -95,20 +97,22 @@
     margin-bottom: 40px;
     text-align: left;
     order: -3;
+    margin-left: 90px;
   }
 
   .promo__slogan {
     font-size: 20px;
     line-height: 20px;
     color: #000000;
-    margin-bottom: 49px;
+    margin-bottom: 50px;
     order: -2;
+    margin-left: 90px;
   }
 
   .promo__wrapper picture {
     position: absolute;
-    left: 29px;
-    top: 262px;
+    left: 30px;
+    top: 200px;
   }
 
   .promo__button {
@@ -118,12 +122,14 @@
     width: 244px;
     order: -1;
     z-index: 1;
+    margin-left: 90px;
   }
 }
 
 @media screen and (min-width: $desktop-width) {
   .promo {
     position: static;
+    padding-top: 110px;
   }
 
   .promo::before {
@@ -151,25 +157,27 @@
   }
 
   .promo__wrapper {
-    max-width: 1440px;
-    box-sizing: border-box;
+    max-width: 1220px;
     margin: 0 auto;
-    padding: 110px 110px 164px;
+    padding: 0 20px;
+    min-height: 470px;
+    box-sizing: content-box;
   }
 
   .promo__wrapper picture {
-    top: 29px;
-    left: 557px;
+    top: -81px;
+    left: 467px;
   }
 
   .promo__caption {
-    padding: 0 570px 0 80px;
+    padding: 0;
     margin-bottom: 40px;
+    margin-left: 80px;
     z-index: 1;
   }
 
   .promo__slogan {
-    padding-left: 80px;
+    margin-left: 80px;
     margin-bottom: 52px;
   }
 

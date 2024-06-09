@@ -161,7 +161,7 @@
 
   .main-nav__list a {
     @include nav-uppercase (18px, 400, 24px, #000000);
-    padding: 7px 0;
+    padding: 6px 0;
   }
 
   .main-nav__item--current {
@@ -172,7 +172,7 @@
     content: "";
     position: absolute;
     right: 0;
-    bottom: -2px;
+    bottom: -5px;
     left: 0;
     height: 2px;
     background: $basic_green;
