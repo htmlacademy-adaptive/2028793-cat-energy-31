@@ -37,11 +37,6 @@
   padding-top: 12px;
 }
 
-.main-header__logo-text {
-  display: block;
-  padding-top: 12px;
-}
-
 @media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
   .main-header {
     padding: 25px 34px 0 30px;
@@ -86,7 +81,6 @@
   .main-header__logo-text {
     width: 118px;
     height: 21px;
-    padding-top: 19px;
     padding-top: 19px;
   }
 }
