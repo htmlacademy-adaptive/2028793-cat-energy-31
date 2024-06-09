@@ -16,7 +16,7 @@
   grid-template-columns: 33px 1fr;
   gap: 56px;
   align-items: start;
-  padding-bottom: 15px;
+  padding-bottom: 14px;
 
   &:hover,
   &:focus {
@@ -54,6 +54,10 @@
     gap: 13px;
     padding: 0;
   }
+
+  .main-header__logo-text {
+    padding-top: 16px;
+  }
 }
 
 @media screen and (min-width: $desktop-width) {
@@ -65,8 +69,8 @@
   .main-header__wrapper {
     display: flex;
     justify-content: space-between;
-    max-width: 1440px;
-    padding: 0 110px;
+    max-width: 1220px;
+    padding: 0 20px;
   }
 
   .main-header__logo {
