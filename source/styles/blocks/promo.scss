@@ -12,10 +12,10 @@
   background-image:
     linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
     image-set(
-      "../../images/index-bg-cat-mobile@1x.webp" 1x type("image/webp"),
-      "../../images/index-bg-cat-mobile@2x.webp" 2x type("image/webp"),
-      "../../images/index-bg-cat-mobile@1x.png" 1x type("image/png"),
-      "../../images/index-bg-cat-mobile@2x.png" 2x type("image/png")
+      url("../../images/index-bg-cat-mobile@1x.webp") 1x type("image/webp"),
+      url("../../images/index-bg-cat-mobile@2x.webp") 2x type("image/webp"),
+      url("../../images/index-bg-cat-mobile@1x.png") 1x type("image/png"),
+      url("../../images/index-bg-cat-mobile@2x.png") 2x type("image/png")
     ),
     linear-gradient(#414045, #535459);
   background-repeat: no-repeat;
@@ -139,15 +139,15 @@
     top: 0;
     right: 0;
     left: auto;
-    width: 50vw;
+    width: 50%;
     height: 694px;
     background-image:
       linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
       image-set(
-        "../../images/index-bg-cat-desktop@1x.webp" 1x type("image/webp"),
-        "../../images/index-bg-cat-desktop@2x.webp" 2x type("image/webp"),
-        "../../images/index-bg-cat-desktop@1x.png" 1x,
-        "../../images/index-bg-cat-desktop@2x.png" 2x
+        url("../../images/index-bg-cat-desktop@1x.webp") 1x type("image/webp"),
+        url("../../images/index-bg-cat-desktop@2x.webp") 2x type("image/webp"),
+        url("../../images/index-bg-cat-desktop@1x.png") 1x type("image/png"),
+        url("../../images/index-bg-cat-desktop@2x.png") 2x type("image/png")
       ),
       linear-gradient(#343336, #47474b);
     background-repeat: no-repeat;
