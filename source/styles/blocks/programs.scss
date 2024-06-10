@@ -1,7 +1,7 @@
 .programs {
   background-color: #ffffff;
   box-sizing: border-box;
-  margin-bottom: 20px;
+  padding-top: 20px;
 }
 
 .programs__wrapper {
@@ -38,7 +38,7 @@
   border-radius: 50%;
   display: block;
   position: absolute;
-  top: 21px;
+  top: 24px;
   left: 20px;
 }
 
@@ -98,7 +98,7 @@
   color: $special_dark-grey-second;
   font-weight: 400;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   padding-bottom: 23px;
   border-bottom: 1px solid #d9d9d9;
 }
@@ -164,6 +164,7 @@
 @media screen and (min-width: $tablet-width) {
   .programs {
     margin-bottom: 45px;
+    padding: 0;
   }
 
   .programs__wrapper {
@@ -273,8 +274,9 @@
   }
 
   .programs__wrapper {
-    max-width: 1440px;
-    padding: 0 110px;
+    max-width: 1220px;
+    padding: 0 20px;
+    box-sizing: content-box;
   }
 
   .programs__list {

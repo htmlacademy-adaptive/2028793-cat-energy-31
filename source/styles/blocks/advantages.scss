@@ -1,11 +1,12 @@
 .advantages {
   width: 100%;
-  padding: 0 20px 49px;
+  padding: 20px 0 49px;
   box-sizing: border-box;
 }
 
 .advantages__wrapper {
   box-sizing: border-box;
+  padding: 0 20px;
   margin: 0 auto;
 }
 
@@ -41,7 +42,7 @@
   height: 60px;
   display: block;
   position: absolute;
-  top: -1px;
+  top: 1px;
 }
 
 .advantages__item--benefit::before {
@@ -102,7 +103,7 @@
     flex-flow: row wrap;
     align-items: center;
     justify-content: flex-start;
-    gap: 36px 134px;
+    gap: 37px 134px;
     counter-reset: advantages-list 0;
   }
 
@@ -158,8 +159,9 @@
   }
 
   .advantages__wrapper {
-    max-width: 1440px;
-    padding: 0 110px;
+    max-width: 1220px;
+    padding: 0 20px;
+    box-sizing: content-box;
   }
 
   .advantages__list {

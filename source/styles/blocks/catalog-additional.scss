@@ -102,7 +102,12 @@
 
 .catalog-additional__gift {
   background-color: rgba(104, 183, 56, 0.85);
-  background-image: image-set("../../images/catalog-bg-cat-mobile@1x.png" 1x, "../../images/catalog-bg-cat-mobile@2x.png"2x);
+  background-image:
+    image-set(
+      url("../../images/catalog-bg-cat-mobile@1x.webp") 1x type("image/webp"),
+      url("../../images/catalog-bg-cat-mobile@2x.webp") 2x type("image/webp"),
+      url("../../images/catalog-bg-cat-mobile@1x.png") 1x type("image/png"),
+      url("../../images/catalog-bg-cat-mobile@2x.png") 2x type("image/png"));
   background-repeat: no-repeat;
   min-width: 280px;
   min-height: 290px;
@@ -197,7 +202,12 @@
   }
 
   .catalog-additional__gift {
-    background-image: image-set("../../images/catalog-bg-cat-tablet@1x.png" 1x, "../../images/catalog-bg-cat-tablet@2x.png"2x);
+    background-image:
+      image-set(
+        url("../../images/catalog-bg-cat-tablet@1x.webp") 1x type("image/webp"),
+        url("../../images/catalog-bg-cat-tablet@2x.webp") 2x type("image/webp"),
+        url("../../images/catalog-bg-cat-tablet@1x.png") 1x type("image/png"),
+        url("../../images/catalog-bg-cat-tablet@2x.png") 2x type("image/png"));
     min-width: 707px;
     min-height: 200px;
     display: block;
@@ -280,7 +290,12 @@
   }
 
   .catalog-additional__gift {
-    background-image: image-set("../../images/catalog-bg-cat-desktop@1x.png" 1x, "../../images/catalog-bg-cat-desktop@2x.png"2x);
+    background-image:
+      image-set(
+        url("../../images/catalog-bg-cat-desktop@1x.webp") 1x type("image/webp"),
+        url("../../images/catalog-bg-cat-desktop@2x.webp") 2x type("image/webp"),
+        url("../../images/catalog-bg-cat-desktop@1x.png") 1x type("image/png"),
+        url("../../images/catalog-bg-cat-desktop@2x.png") 2x type("image/png"));
     min-width: 0;
     min-height: 0;
     width: 245px;
